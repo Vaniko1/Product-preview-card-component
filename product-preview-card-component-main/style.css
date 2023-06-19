@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.img_one {
+  width: 50%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.main {
+  margin-top: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.main_content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  color: hsl(228, 12%, 48%);
+}
+
+.main_content h1 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.dollars {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.dollars h2 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: rgb(3, 79, 3);
+}
+
+.dollars h4 {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px;
+  background-color: rgb(3, 79, 3);
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(5, 138, 5);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .main {
+    position: relative;
+    left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25%;
+  }
+
+  .main_content {
+    gap: 10px;
+  }
+
+  .main_content h1 {
+    font-size: 28px;
+  }
+
+  .main_content p {
+    font-size: 12.5px;
+  }
+
+  .img_one {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .main_content {
+    width: 300px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .attribution {
+    position: relative;
+    top: 50px;
+    text-align: center;
+  }
+}
